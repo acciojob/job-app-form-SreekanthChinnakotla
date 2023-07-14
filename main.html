@@ -10,19 +10,19 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-<form>
+<form method="post">
 	<label for="name">Name*</label>
-	<input type="text" placeholder="your name" name="name" required>
+	<input type="text" placeholder="your name" id="name" required>
 	<br>
 	<lable for="email">Email*</lable>
-	<input type="email" placeholder="Your email" name="email" required>
+	<input type="email" placeholder="Your email" id="email" required>
 	<br>
-	<lable for="gender" aria-required>Gender*</lable>
+	<lable for="gender" >Gender*</lable>
 	<label for="male">Male</label>
-<input type="radio" id="male" name="gender" value="male">
+<input type="radio" id="male" name="gender" value="male" required>
 
 <label for="female">Female</label>
-<input type="radio" id="female" name="gender" value="female">
+<input type="radio" id="female" name="gender" value="female" required>
 	<br>
 	<lable for="brands">Laptop Brands</lable>
 	<select id="brands">
@@ -32,18 +32,19 @@
 	</select>
 	<br>
 <lable for="age">Age*</lable>
-<input type="number" id="age" name="age" min="18" max="99" required>
+<input type="number" id="age" id="age" min="18" max="99" required>
 	<br>
 	<lable for="dob">DOB*</lable>
-	<input type="date" id="dob" name="DOB">
+	<input type="date" id="dob" name="DOB" required>
 	<br>
 	<lable for="Password">Password*</lable>
-	<input type="password" name = "Password" required>
+	<input type="password" id = "Password" required>
 	<br>
 	<lable for="por">Portfolio</lable>
 	<input type="url" name="por">
 	<br>
 	<input type="submit" value="submit">
+</form>
 
 	
 </body>
